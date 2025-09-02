@@ -1,81 +1,65 @@
 .controller.edit {
-  background: url(svg/base.svg);
-}
-
-.controller.edit {
     background: url(svg/base.svg);
-    width: 794px;
-    height: 639px;
-    margin-left: 0;
-    margin-top: 0;
+    width: 941px;
+    height: 754px;
 }
-
 .controller.disconnected.edit {
     background: url(svg/disconnected.svg);
 }
 
 .controller.edit .sticks {
-	width: 367px;
-    height: 95px;
-    left: 222px;
-    top: 294px;
+    left: 267px;
+    top: 395px;
 }
-
 .controller.edit .stick {
     background: url(svg/sticks.svg);
-    width: 95px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
 }
-
 .controller.edit .stick.pressed.left, .controller.edit .stick.pressed.right {
-    background-position: -95px 0;
+    background-position: -100px 0;
 }
-
 .controller.edit .stick.right {
     top: 0;
-    left: 255px;
+    left: 308px;
 }
 
 .controller.edit .abxy {
-    width: 181px;
-    height: 181px;
-    left: 559px;
-    top: 152px;
+    left: 666px;
+    top: 212px;
 }
-
 .controller.edit .button {
     background: url(svg/face.svg);
-    width: 54px;
-    height: 54px;
+    width: 59px;
+    height: 58px;
 }
-
 .controller.edit .button.pressed {
-  	background-position-y: -55px;
-	margin-top: 0;
+    background-position-y: -58px;
+    margin-top: 0;
 }
-
 .controller.edit .a {
-    background-position: 0 0;
-    left: 59px;
-    top: 116px;
+    background-position: 1px 0;
+    left: 69px;
+    top: 133px;
 }
-
 .controller.edit .b {
-    background-position: -54px 0;
-    left: 118px;
-    top: 59px;
+    background-position: -59px 0;
+    left: 136px;
+    top: 67px;
 }
-
 .controller.edit .x {
-    background-position: -108px 0;
+    background-position: -119px 0;
     left: 0px;
-    top: 58px;
+    top: 67px;
+}
+.controller.edit .y {
+    background-position: -178px 0;
+    left: 68px;
+    top: 0px;
 }
 
-.controller.edit .y {
-    background-position: -162px 0;
-    left: 59px;
-    top: 0px;
+.controller.edit .quadrant { 
+    display: none; 
 }
 
 .controller.edit .arrows {
@@ -84,132 +68,114 @@
     width: 416px;
     height: 57px;
 }
-
-.controller.edit .quadrant { 
-    display: none; 
+.controller.edit .arrows .back.pressed,
+.controller.edit .arrows .start.pressed {
+    opacity: 1;
 }
-
 .controller.edit .back, .controller.edit .start {
     background: url(svg/start.svg);
-    width: 23px;
-    height: 37px;
-    margin-top: -8px;
-    margin-left: 5px;
+    width: 27px;
+    height: 57px;
+    margin-top: 39px;
+    margin-left: 42px;
     opacity: 0;
+    transform: rotate(345deg);
 }
-
 .controller.edit .start {
-    background-position: 23px 0;
-    margin-right: 16px;
-    float: right;
-}
-
-.controller.edit .dpad {
-	width: 144px;
-    height: 144px;
-    left: 71px;
-    top: 196px;
-}
-
-.controller.edit .face {
-    background: none;
+    margin-right: -93px;
+    transform: rotate(15deg);
 }
 
 .controller.edit .bumpers {
-    width: 620px;
-    height: 36px;
-    left: 90px;
-    top: 98px;
+    left: 118px;
+    top: 132px;
 }
-
 .controller.edit .bumper {
     background: url(svg/bumper.svg);
-    width: 114px;
-    height: 36px;
+    width: 118px;
+    height: 44px;
     opacity: 0;
 }
-
+.controller.edit .bumper.pressed {
+    opacity: 1;
+}
 .controller.edit .bumper.right {
-    margin-right: 6px;
+    margin-right: -114px;
 }
 
 .controller.edit .triggers {
-    width: 593px;
-    height: 97px;
-    left: 100px;
+    left: 116px;
+    width: 710px;
+    height: 146px;
+    top: -1px;
 }
-
 .controller.edit .trigger {
     background: url(svg/triggers.svg);
-    width: 100px;
-    height: 97px;
+    width: 127px;
+    height: 145px;
     opacity: 0;
+    scale: 0.935;
 }
-
 .controller.edit .trigger.right {
-    background-position: -100px 0;
+    background-position: -126px 0;
 	transform: rotateY(0);
 }
 
 .controller.edit .touchpad {
-    width: 320px;
-    height: 167px;
+    width: 375px;
+    height: 217px;
     position: absolute;
-    left: 237px;
-    top: 97px;
+    left: 284px;
+    top: 136px;
 }
-
 .controller.edit .touchpad.pressed {
     background: url(svg/touchpad.svg);
 }
 
 .controller.edit .dpad {
     position: absolute;
-    width: 125px;
-    height: 126px;
-    top: 171px;
-    left: 82px;
+    top: 228px;
+    left: 91px;
 }
-
 .controller.edit .face {
     background: url(svg/dpad.svg);
     position: absolute;
 }
-
 .controller.edit .face.up, .controller.edit .face.down {
-    width: 44px;
+    width: 57px;
+    height: 71px;
+}
+.controller.edit .face.left, .controller.edit .face.right {
+    width: 71px;
     height: 58px;
 }
-
-.controller.edit .face.left, .controller.edit .face.right {
-    width: 57px;
-    height: 44px;
-}
-
 .controller.edit .face.up {
-    left: 45px;
+    left: 60px;
     top: 0;
-    background-position: 0px 0;
+    background-position: -59px 0;
 }
-
 .controller.edit .face.down {
-    left: 45px;
-    bottom: -7px;
-    background-position: -44px 0;
+    left: 60px;
+    bottom: -50px;
+    background-position: -1px 0;
 }
-
 .controller.edit .face.left {
-	top: 45px;
+    top: 59px;
     left: 0;
-    background-position: -88px 0;
+    background-position: -116px 0;
 }
-
 .controller.edit .face.right {
-    top: 44px;
-    right: -7px;
-    background-position: -144px 0;
+    top: 59px;
+    right: -50px;
+    background-position: -187px 0;
+}
+.controller.edit .face.pressed {
+    background-position-y: 71px;
 }
 
-.controller.edit .face.pressed {
-    background-position-y: 58px;
+.controller.edit .meta {
+    scale: 1.3;
+}
+.controller.edit .meta.pressed {
+    background-color: url(svg/meta.svg) no-repeat center;
 }
