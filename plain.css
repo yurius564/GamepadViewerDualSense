@@ -1,17 +1,17 @@
 :root {
-    --base-svg: url(default/base.svg);
-    --disconnected-svg: url(default/disconnected.svg);
+    --base-svg: url(plain/base.svg);
+    --disconnected-svg: url(plain/disconnected.svg);
 
-    --sticks-svg: url(default/sticks.svg);
-    --face-svg: url(default/face.svg);
-    --dpad-svg: url(default/dpad.svg);
+    --sticks-svg: url(plain/sticks.svg);
+    --face-svg: url(plain/face.svg);
+    --dpad-svg: url(plain/dpad.svg);
 
-    --bumper-svg: url(default/bumper.svg);
-    --triggers-svg: url(default/triggers.svg);
+    --bumper-svg: url(plain/bumper.svg);
+    --triggers-svg: url(plain/triggers.svg);
 
-    --start-svg: url(default/start.svg);
-    --touchpad-svg: url(default/touchpad.svg);
-    --meta-svg: url(default/meta.svg);
+    --start-svg: url(plain/start.svg);
+    --touchpad-svg: url(plain/touchpad.svg);
+    --meta-svg: url(plain/meta.svg);
 }
 
 .controller.edit {
