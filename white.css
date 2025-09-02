@@ -1,0 +1,217 @@
+:root {
+    --base-svg: url(white/base.svg);
+    --disconnected-svg: url(white/disconnected.svg);
+
+    --sticks-svg: url(white/sticks.svg);
+    --face-svg: url(white/face.svg);
+    --dpad-svg: url(white/dpad.svg);
+
+    --bumper-svg: url(white/bumper.svg);
+    --triggers-svg: url(white/triggers.svg);
+
+    --start-svg: url(white/start.svg);
+    --touchpad-svg: url(white/touchpad.svg);
+    --meta-svg: url(white/meta.svg);
+}
+
+.controller.edit {
+    background: var(--base-svg);
+    width: 941px;
+    height: 754px;
+}
+.controller.disconnected.edit {
+    background: var(--disconnected-svg);
+}
+
+.controller.edit .quadrant { 
+    display: none; 
+}
+
+/* #region [STICKS] */
+.controller.edit .sticks {
+    left: 267px;
+    top: 395px;
+}
+.controller.edit .stick {
+    background: var(--sticks-svg);
+    width: 100px;
+    height: 100px;
+}
+.controller.edit .stick.pressed.left, .controller.edit .stick.pressed.right {
+    background-position: -100px 0;
+}
+.controller.edit .stick.right {
+    top: 0;
+    left: 308px;
+}
+/* #endregion */
+
+/* #region [FACE] */
+.controller.edit .abxy {
+    left: 666px;
+    top: 212px;
+}
+.controller.edit .button {
+    background: var(--face-svg);
+    width: 59px;
+    height: 58px;
+}
+.controller.edit .button.pressed {
+    background-position-y: -58px;
+    margin-top: 0;
+}
+.controller.edit .a {
+    background-position: 0 0;
+    left: 69px;
+    top: 133px;
+}
+.controller.edit .b {
+    background-position: -60px 0;
+    left: 137px;
+    top: 67px;
+}
+.controller.edit .x {
+    background-position: -120px 0;
+    left: 0px;
+    top: 67px;
+}
+.controller.edit .y {
+    background-position: -179px 0;
+    left: 68px;
+    top: 0px;
+}
+/* #endregion */
+
+/* #region [DPAD] */
+.controller.edit .dpad {
+    position: absolute;
+    top: 228px;
+    left: 91px;
+}
+.controller.edit .face {
+    background: var(--dpad-svg);
+    position: absolute;
+}
+.controller.edit .face.up, .controller.edit .face.down {
+    width: 57px;
+    height: 71px;
+}
+.controller.edit .face.left, .controller.edit .face.right {
+    width: 71px;
+    height: 58px;
+}
+.controller.edit .face.up {
+    left: 60px;
+    top: 0;
+    background-position: -59px 0;
+}
+.controller.edit .face.down {
+    left: 60px;
+    bottom: -50px;
+    background-position: -1px 0;
+}
+.controller.edit .face.left {
+    top: 59px;
+    left: 0;
+    background-position: -116px 0;
+}
+.controller.edit .face.right {
+    top: 59px;
+    right: -50px;
+    background-position: -188px 0;
+}
+.controller.edit .face.pressed {
+    background-position-y: 71px;
+}
+/* #endregion */
+
+/* #region [BUMPER] */
+.controller.edit .bumpers {
+    left: 118px;
+    top: 132px;
+}
+.controller.edit .bumper {
+    background: var(--bumper-svg);
+    width: 118px;
+    height: 44px;
+    opacity: 0;
+}
+.controller.edit .bumper.pressed {
+    opacity: 1;
+}
+.controller.edit .bumper.right {
+    margin-right: -114px;
+}
+/* #endregion */
+
+/* #region [TRIGGERS] */
+.controller.edit .triggers {
+    left: 116px;
+    width: 710px;
+    height: 146px;
+    top: -1px;
+}
+.controller.edit .trigger {
+    background: var(--triggers-svg);
+    width: 127px;
+    height: 145px;
+    opacity: 0;
+    scale: 0.935;
+}
+.controller.edit .trigger.right {
+    background-position: -126px 0;
+	transform: rotateY(0);
+}
+/* #endregion */
+
+/* #region [BACK/START] */
+.controller.edit .arrows {
+    left: 195px;
+	top: 140px;
+    width: 416px;
+    height: 57px;
+}
+.controller.edit .arrows .back.pressed,
+.controller.edit .arrows .start.pressed {
+    opacity: 1;
+}
+.controller.edit .back, .controller.edit .start {
+    background: var(--start-svg);
+    width: 27px;
+    height: 57px;
+    margin-top: 39px;
+    margin-left: 42px;
+    opacity: 0;
+    transform: rotate(345deg);
+}
+.controller.edit .start {
+    margin-right: -93px;
+    transform: rotate(15deg);
+}
+/* #endregion */
+
+/* #region [TOUCHPAD] */
+.controller.edit .touchpad {
+    width: 375px;
+    height: 217px;
+    position: absolute;
+    left: 284px;
+    top: 136px;
+}
+.controller.edit .touchpad.pressed {
+    background: var(--touchpad-svg);
+}
+/* #endregion */
+
+/* #region [META] */
+.controller.edit .meta {
+    scale: 1.3;
+    width: 43px;
+    height: 43px;
+    left: 453px;
+    bottom: 289px;
+}
+.controller.edit .meta.pressed {
+    background-color: var(--meta-svg) no-repeat center;
+}
+/* #endregion */
